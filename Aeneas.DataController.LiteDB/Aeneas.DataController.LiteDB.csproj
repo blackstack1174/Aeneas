@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aeneas.DataController\Aeneas.DataController.csproj" />
+    <ProjectReference Include="..\Aeneas.Models\Aeneas.Models.csproj" />
+  </ItemGroup>
+
+</Project>

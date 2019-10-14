@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeneas", "Aeneas\Aeneas.csproj", "{880B0025-D244-4E99-9A2F-F292E89949C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aeneas", "Aeneas\Aeneas.csproj", "{880B0025-D244-4E99-9A2F-F292E89949C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeneas.Models", "Aeneas.Models\Aeneas.Models.csproj", "{54817680-1CCE-49FB-9D31-16666ABB9C4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeneas.DataController", "Aeneas.DataController\Aeneas.DataController.csproj", "{DBDA3594-0255-4FC8-8DFC-D63B9AE5B3FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeneas.DataController.LiteDB", "Aeneas.DataController.LiteDB\Aeneas.DataController.LiteDB.csproj", "{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{880B0025-D244-4E99-9A2F-F292E89949C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{880B0025-D244-4E99-9A2F-F292E89949C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{880B0025-D244-4E99-9A2F-F292E89949C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54817680-1CCE-49FB-9D31-16666ABB9C4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54817680-1CCE-49FB-9D31-16666ABB9C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54817680-1CCE-49FB-9D31-16666ABB9C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54817680-1CCE-49FB-9D31-16666ABB9C4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBDA3594-0255-4FC8-8DFC-D63B9AE5B3FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDA3594-0255-4FC8-8DFC-D63B9AE5B3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDA3594-0255-4FC8-8DFC-D63B9AE5B3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDA3594-0255-4FC8-8DFC-D63B9AE5B3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
