@@ -6,4 +6,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Aeneas.DataController.LiteDB\Aeneas.DataController.LiteDB.csproj" />
+    <ProjectReference Include="..\Aeneas.DataController\Aeneas.DataController.csproj" />
+    <ProjectReference Include="..\Aeneas.Models\Aeneas.Models.csproj" />
+  </ItemGroup>
+
 </Project>
