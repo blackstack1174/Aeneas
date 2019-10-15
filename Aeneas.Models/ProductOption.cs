@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Aeneas.Models
 {
-    public class ProductOption
+    public class ProductOption 
     {
         public int ID { get; set; }
         public string Name { get; set; }

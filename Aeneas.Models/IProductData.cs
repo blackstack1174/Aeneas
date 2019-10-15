@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Text;
 
 namespace Aeneas.Models
 {
-    public interface IProductData
+    public interface IProductData : INotifyPropertyChanged
     {
         string ProductID { get; set; }
         string MainCategory { get; set; }
@@ -14,7 +16,7 @@ namespace Aeneas.Models
 
         string Name { get; set; }
 
-        List<string> MainImage { get; set; }
+        ObservableCollection<string> MainImage { get; set; }
 
         string Price { get; set; }
         string DiscountPrice { get; set; }
@@ -26,7 +28,7 @@ namespace Aeneas.Models
 
         string DeliveryChangeAddres { get; set; }
 
-        List<ProductOption> Options { get; set; }
+        ObservableCollection<ProductOption> Options { get; set; }
 
         string DetailHtml { get; set; }
 
