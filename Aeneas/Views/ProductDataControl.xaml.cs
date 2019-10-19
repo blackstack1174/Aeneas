@@ -35,8 +35,47 @@ namespace Aeneas.Views
             InitializeComponent();
         }
 
-        private void Options_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void btnOptions_Click(object sender, RoutedEventArgs e)
         {
+            var productData = this.DataContext as IProductData;
+            if (productData != null)
+            {
+                var productOption = new ProductOption();
+                productOption.ID = Convert.ToInt32(this.optionsID.Text);
+                productOption.Name = this.optionsName.Text;
+                productOption.Price = this.optionsPrice.Text;
+                productOption.Quantity = this.optionsQuantity.Text;
+                productData.Options.Add(productOption);
+            }
+
+        }
+
+        private void btnMainImages_Click(object sender, RoutedEventArgs e)
+        {
+            var productData = this.DataContext as IProductData;
+            if (productData != null)
+            {
+                if (string.IsNullOrWhiteSpace(mainImage.Text) == false)
+                {
+                    productData.MainImage.Add(mainImage.Text);
+                }
+            }
+
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var menuItem = sender as MenuItem;
+            switch (menuItem.Header)
+            {
+                case "Delete":
+                    var productData = DataContext as IProductData;
+                    if (productData != null)
+                    {
+                        productData.Options.RemoveAt(Options.SelectedIndex);
+                    }
+                    break;
+            }
 
         }
     }
