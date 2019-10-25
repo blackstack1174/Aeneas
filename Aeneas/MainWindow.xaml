@@ -6,13 +6,34 @@
         xmlns:local="clr-namespace:Aeneas"
         xmlns:Views="clr-namespace:Aeneas.Views" x:Class="Aeneas.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="546" Width="1341">
-    <Grid>
-        <Views:ProductDataControl x:Name="pdcMain" HorizontalAlignment="Left" Height="433" Margin="587,32,0,0" VerticalAlignment="Top" Width="721"/>
-        <Button x:Name="btnAdd" Content="새로 생성" HorizontalAlignment="Left" Height="50" Margin="734,470,0,0" VerticalAlignment="Top" Width="105" Background="#FF2C8BFF" Foreground="White" Click="btnAdd_Click"/>
-        <Button x:Name="btnDelete" Content="삭제" HorizontalAlignment="Left" Height="50" Margin="844,470,0,0" VerticalAlignment="Top" Width="104" Background="#FF870505" Foreground="White" Click="btnDelete_Click"/>
-        <Button x:Name="btnUpdate" Content="추가 혹은 업데이트" HorizontalAlignment="Left" Height="50" Margin="953,470,0,0" VerticalAlignment="Top" Width="119" Background="#FFC58109" Foreground="White" Click="btnUpdate_Click"/>
-        <ListView x:Name="lsvProductList" HorizontalAlignment="Left" Height="510" Margin="10,0,0,0" VerticalAlignment="Center" Width="545" MouseDoubleClick="lsvProductList_MouseDoubleClick">
+        Title="MainWindow" Height="621" Width="1341" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Storyboard x:Key="sbdOpenEntity">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="pdcMain" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1">
+                    <SplineDoubleKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,1"/>
+                    </SplineDoubleKeyFrame.KeySpline>
+                </SplineDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Grid x:Name="grid" Height="546" Margin="0,0,10,0">
+        <Views:ProductDataControl x:Name="pdcMain" HorizontalAlignment="Left" Height="433" Margin="579,22,0,0" VerticalAlignment="Top" Width="721" RenderTransformOrigin="0.5,0.5">
+            <Views:ProductDataControl.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Views:ProductDataControl.RenderTransform>
+        </Views:ProductDataControl>
+        <Button x:Name="btnAdd" Content="새로 생성" HorizontalAlignment="Left" Height="50" Margin="928,486,0,0" VerticalAlignment="Top" Width="105" Background="#FF2C8BFF" Foreground="White" Click="btnAdd_Click"/>
+        <Button x:Name="btnDelete" Content="삭제" HorizontalAlignment="Left" Height="50" Margin="1038,486,0,0" VerticalAlignment="Top" Width="104" Background="#FF870505" Foreground="White" Click="btnDelete_Click"/>
+        <Button x:Name="btnUpdate" Content="추가 혹은 업데이트" HorizontalAlignment="Left" Height="50" Margin="1147,486,0,0" VerticalAlignment="Top" Width="174" Background="#FFC58109" Foreground="White" Click="btnUpdate_Click"/>
+        <ListView x:Name="lsvProductList" HorizontalAlignment="Left" Height="510" Margin="10,0,0,0" VerticalAlignment="Center" Width="545" MouseDoubleClick="lsvProductList_MouseDoubleClick" FontSize="12">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="60" Header="ProductID" DisplayMemberBinding="{Binding ProductID}"/>
@@ -26,5 +47,11 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <GroupBox Header="DB" Margin="600,453,601,0" RenderTransformOrigin="1.593,2.212">
+            <StackPanel>
+                <RadioButton Content="LiteDB" Checked="RadioButton_Checked" IsChecked="True"/>
+                <RadioButton Content="WebDB" Checked="RadioButton_Checked"/>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>

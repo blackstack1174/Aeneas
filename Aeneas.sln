@@ -5,11 +5,17 @@ VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aeneas", "Aeneas\Aeneas.csproj", "{880B0025-D244-4E99-9A2F-F292E89949C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeneas.Models", "Aeneas.Models\Aeneas.Models.csproj", "{54817680-1CCE-49FB-9D31-16666ABB9C4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aeneas.Models", "Aeneas.Models\Aeneas.Models.csproj", "{54817680-1CCE-49FB-9D31-16666ABB9C4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeneas.DataController", "Aeneas.DataController\Aeneas.DataController.csproj", "{DBDA3594-0255-4FC8-8DFC-D63B9AE5B3FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aeneas.DataController", "Aeneas.DataController\Aeneas.DataController.csproj", "{DBDA3594-0255-4FC8-8DFC-D63B9AE5B3FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeneas.DataController.LiteDB", "Aeneas.DataController.LiteDB\Aeneas.DataController.LiteDB.csproj", "{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aeneas.DataController.LiteDB", "Aeneas.DataController.LiteDB\Aeneas.DataController.LiteDB.csproj", "{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aeneas.DataController.WebDB", "Aeneas.DataController.WebDB\Aeneas.DataController.WebDB.csproj", "{1F74CC58-5D51-44A4-984A-B2E7B8D971C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aeneas.WebServer", "Aeneas.WebServer\Aeneas.WebServer.csproj", "{F3BB815F-6D8F-46D1-9EE6-E809DF56CFDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChattingSample", "ChattingSample\ChattingSample.csproj", "{99133808-2C2E-431D-B681-5286BDC939DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BEFD18C-DAD0-45FC-A1CA-04C7993F2DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F74CC58-5D51-44A4-984A-B2E7B8D971C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F74CC58-5D51-44A4-984A-B2E7B8D971C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F74CC58-5D51-44A4-984A-B2E7B8D971C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F74CC58-5D51-44A4-984A-B2E7B8D971C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3BB815F-6D8F-46D1-9EE6-E809DF56CFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BB815F-6D8F-46D1-9EE6-E809DF56CFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BB815F-6D8F-46D1-9EE6-E809DF56CFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BB815F-6D8F-46D1-9EE6-E809DF56CFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99133808-2C2E-431D-B681-5286BDC939DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99133808-2C2E-431D-B681-5286BDC939DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99133808-2C2E-431D-B681-5286BDC939DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99133808-2C2E-431D-B681-5286BDC939DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

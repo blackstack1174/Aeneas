@@ -7,45 +7,49 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="17" Margin="4,5,0,0" Text="ProductID" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" />
-        <TextBlock HorizontalAlignment="Left" Margin="4,27,0,0" Text="MainCategory" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,54,0,0" Text="SubCategory" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,75,0,0" Text="SmallCategory" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,101,0,0" Text="DetailCategory" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="2,131,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="263,220,0,0" Text="MainImage" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,187,0,0" Text="Price" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,212,0,0" Text="DiscountPrice" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,241,0,0" Text="DeliveryBasicFee" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,270,0,0" Text="DeliveryReturnFee" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,298,0,0" Text="DeliveryReturnAddress" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,325,0,0" Text="DeliveryChangeFee" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="4,354,0,0" Text="DeliveryChangeAddres" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="263,70,0,0" Text="Options" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="277,376,0,0" Text="DetailHtml" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="403*"/>
+            <ColumnDefinition Width="397*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="8,11,0,0" Text="ProductID" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" FontFamily="Arial" />
+        <TextBlock HorizontalAlignment="Left" Margin="8,33,0,0" Text="MainCategory" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,63,0,0" Text="SubCategory" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,93,0,0" Text="SmallCategory" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,126,0,0" Text="DetailCategory" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="6,158,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="277,220,0,0" Text="MainImage" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,195,0,0" Text="Price" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,236,0,0" Text="DiscountPrice" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,261,0,0" Text="DeliveryBasicFee" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,289,0,0" Text="DeliveryReturnFee" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,314,0,0" Text="DeliveryReturnAddress" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,349,0,0" Text="DeliveryChangeFee" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,384,0,0" Text="DeliveryChangeAddres" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="271,70,0,0" Text="Options" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="277,376,0,0" Text="DetailHtml" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial"/>
 
-        <TextBox x:Name="ProductID" HorizontalAlignment="Left" Margin="151,10,0,0" Text="{Binding ProductID, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="MainCategory" HorizontalAlignment="Left" Margin="151,35,0,0" Text="{Binding MainCategory}" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="SubCategory" HorizontalAlignment="Left" Margin="151,59,0,0" Text="{Binding SubCategory}" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="SmallCategory" HorizontalAlignment="Left" Margin="151,81,0,0" Text="{Binding SmallCategory }" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="DetailCategory" HorizontalAlignment="Left" Margin="151,106,0,0" Text="{Binding DetailCategory }" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="151,136,0,0" Text="{Binding Name }" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="Price" HorizontalAlignment="Left" Margin="151,191,0,0" Text="{Binding Price }" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="DiscountPrice" HorizontalAlignment="Left" Margin="151,0,0,0" Text="{Binding DiscountPrice }" TextWrapping="Wrap" VerticalAlignment="Center" Width="79" Height="17"/>
-        <TextBox x:Name="DeliveryBasicFee" HorizontalAlignment="Left" Margin="151,246,0,0" Text="{Binding DeliveryBasicFee }" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="DeliveryReturnFee" HorizontalAlignment="Left" Margin="151,274,0,0" Text="{Binding DeliveryReturnFee }" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="17"/>
-        <TextBox x:Name="DeliveryReturnAddress" HorizontalAlignment="Left" Margin="151,302,0,0" Text="{Binding DeliveryReturnAddress }" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="17"/>
-        <TextBox x:Name="DeliveryChangeFee" HorizontalAlignment="Left" Margin="151,330,0,0" Text="{Binding DeliveryChangeFee }" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="17"/>
-        <TextBox x:Name="DeliveryChangeAddres" HorizontalAlignment="Left" Margin="151,358,0,0" Text="{Binding DeliveryChangeAddres }" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="17"/>
-        <TextBox x:Name="DetailHtml" HorizontalAlignment="Left" Margin="350,322,0,0" Text="{Binding DetailHtml }" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" Height="120"/>
-        <ListView x:Name="Options" ItemsSource="{Binding Options}"  Margin="349,28,0,0" Height="116" VerticalAlignment="Top" HorizontalAlignment="Left" Width="352" ContextMenuService.IsEnabled="True">
+        <TextBox x:Name="ProductID" HorizontalAlignment="Left" Margin="153,2,0,0" Text="{Binding ProductID}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="MainCategory" HorizontalAlignment="Left" Margin="153,41,0,0" Text="{Binding MainCategory}"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="SubCategory" HorizontalAlignment="Left" Margin="153,71,0,0" Text="{Binding SubCategory}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="SmallCategory" HorizontalAlignment="Left" Margin="153,100,0,0" Text="{Binding SmallCategory }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="DetailCategory" HorizontalAlignment="Left" Margin="153,127,0,0" Text="{Binding DetailCategory }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="153,152,0,0" Text="{Binding Name }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="Price" HorizontalAlignment="Left" Margin="153,191,0,0" Text="{Binding Price }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="DiscountPrice" HorizontalAlignment="Left" Text="{Binding DiscountPrice }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16" Margin="152,232,0,0"/>
+        <TextBox x:Name="DeliveryBasicFee" HorizontalAlignment="Left" Margin="153,259,0,0" Text="{Binding DeliveryBasicFee }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="DeliveryReturnFee" HorizontalAlignment="Left" Margin="153,290,0,0" Text="{Binding DeliveryReturnFee }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="DeliveryReturnAddress" HorizontalAlignment="Left" Margin="154,316,0,0" Text="{Binding DeliveryReturnAddress }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="DeliveryChangeFee" HorizontalAlignment="Left" Margin="154,349,0,0" Text="{Binding DeliveryChangeFee }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="DeliveryChangeAddres" HorizontalAlignment="Left" Margin="154,383,0,0" Text="{Binding DeliveryChangeAddres }" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="DetailHtml" HorizontalAlignment="Left" Margin="364,347,0,0" Text="{Binding DetailHtml }" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" Height="85" Grid.ColumnSpan="2" TextBlock.FontFamily="Arial" FontSize="16" TextBlock.FontSize="16"/>
+        <ListView x:Name="Options" ItemsSource="{Binding Options}"  Margin="349,28,0,0" Height="116" VerticalAlignment="Top" HorizontalAlignment="Left" Width="389" ContextMenuService.IsEnabled="True" Grid.ColumnSpan="2" TextBlock.FontFamily="Arial" TextBlock.FontSize="16">
             <ListView.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Delete" Click ="MenuItem_Click" >
                     </MenuItem>
                 </ContextMenu>
             </ListView.ContextMenu>
-            
+
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="60" Header="ID" DisplayMemberBinding="{Binding ID}">
@@ -60,20 +64,20 @@
 
             </ListView.View>
         </ListView>
-        <ListView ItemsSource="{Binding MainImage}" x:Name="MainImage" Margin="349,176,0,0" HorizontalAlignment="Left" Width="352" Height="116" VerticalAlignment="Top">
+        <ListView ItemsSource="{Binding MainImage}" x:Name="MainImage" Margin="349,176,0,0" HorizontalAlignment="Left" Width="352" Height="116" VerticalAlignment="Top" Grid.ColumnSpan="2" TextBlock.FontFamily="Arial" TextBlock.FontSize="16">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="60" Header="Images"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox x:Name="optionsID" HorizontalAlignment="Left" Margin="305,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
-        <TextBox x:Name="optionsName" HorizontalAlignment="Left" Margin="387,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
-        <TextBox x:Name="optionsPrice"  HorizontalAlignment="Left" Margin="469,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
-        <TextBox x:Name="optionsQuantity" HorizontalAlignment="Left" Margin="551,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" RenderTransformOrigin="1.753,0.687"/>
-        <Button Content="Btn" HorizontalAlignment="Left" Margin="639,148,0,0" VerticalAlignment="Top" Width="62" Click="btnOptions_Click"/>
-        <Button Content="Btn" HorizontalAlignment="Left" Margin="431,297,0,0" VerticalAlignment="Top" Width="62" Click="btnMainImages_Click"/>
-        <TextBox x:Name="mainImage" HorizontalAlignment="Left" Margin="350,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <TextBox x:Name="optionsID" HorizontalAlignment="Left" Margin="305,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="optionsName" HorizontalAlignment="Left" Margin="387,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Grid.ColumnSpan="2" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="optionsPrice"  HorizontalAlignment="Left" Margin="66,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Grid.Column="1" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="optionsQuantity" HorizontalAlignment="Left" Margin="148,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" RenderTransformOrigin="1.753,0.687" Grid.Column="1" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <Button Content="Btn" HorizontalAlignment="Left" Margin="298,152,0,0" VerticalAlignment="Top" Width="62" Click="btnOptions_Click" Grid.Column="1" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <Button Content="Btn" HorizontalAlignment="Left" Margin="66,298,0,0" VerticalAlignment="Top" Width="62" Click="btnMainImages_Click" Grid.Column="1" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
+        <TextBox x:Name="mainImage" HorizontalAlignment="Left" Margin="350,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Grid.ColumnSpan="2" TextBlock.FontFamily="Arial" TextBlock.FontSize="16"/>
 
 
     </Grid>
